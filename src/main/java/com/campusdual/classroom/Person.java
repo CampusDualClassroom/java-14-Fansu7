@@ -8,4 +8,30 @@ public class Person {
 		this.name = name;
 		this.surname = surname;
 	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSurname() {
+		return this.surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	public void getDetails(){
+		StringBuilder builder = new StringBuilder();
+		builder.append("\nNombre completo: ");
+		builder.append(getName());
+		builder.append(" ");
+		builder.append(getSurname());
+		builder.append(".");
+		System.out.println(builder.toString());
+	}
 }
